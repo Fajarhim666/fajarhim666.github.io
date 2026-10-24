@@ -1,15 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <style>
-    .bg { fill: #171a1f; }
-    .ring { stroke: #3cb8a4; }
-    .txt { fill: #f0eee4; }
-    @media (prefers-color-scheme: light) {
-      .bg { fill: #f4efe4; }
-      .ring { stroke: #232a35; }
-      .txt { fill: #232a35; }
-    }
-  </style>
-  <circle cx="32" cy="32" r="31" class="bg" />
-  <circle cx="32" cy="32" r="28" fill="none" class="ring" stroke-width="2.5" />
-  <text x="32" y="38.5" font-family="'DM Mono', 'SF Mono', Consolas, monospace" font-size="22" font-weight="600" class="txt" text-anchor="middle" letter-spacing="-0.5px">fh</text>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="236.000000pt" height="233.000000pt" viewBox="0 0 236.000000 233.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,233.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M0 1165 l0 -1165 1180 0 1180 0 0 1165 0 1165 -1180 0 -1180 0 0
+-1165z m1298 1013 c8 -8 12 -51 12 -130 0 -106 -2 -118 -19 -128 -12 -6 -123
+-10 -290 -10 l-271 0 0 -220 0 -220 195 0 c149 0 195 -3 195 -12 0 -7 -33 -69
+-73 -138 l-73 -125 -120 -5 -119 -5 -5 -210 -5 -210 -46 -80 c-176 -307 -233
+-404 -236 -401 -2 2 22 61 52 132 31 71 59 135 62 142 4 9 -10 12 -52 12 -106
+0 -95 -91 -95 808 0 600 3 791 12 800 17 17 859 17 876 0z m660 -350 c9 -9 12
+-200 12 -800 0 -768 0 -788 -19 -798 -11 -5 -74 -10 -140 -10 -175 0 -161 -32
+-161 355 l0 315 -237 -2 -238 -3 -5 -323 c-4 -272 -7 -324 -20 -332 -8 -5 -72
+-10 -142 -10 -102 0 -130 3 -142 16 -14 13 -16 57 -16 322 l0 308 63 109 c35
+61 144 249 242 418 97 169 179 306 181 304 2 -2 -35 -93 -81 -202 -80 -186
+-86 -203 -83 -259 l3 -61 237 -3 237 -2 3 325 c3 277 5 327 18 335 23 15 273
+13 288 -2z"/>
+</g>
 </svg>
