@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #171a1f; }
+    .ring { stroke: #3cb8a4; }
+    .txt { fill: #f0eee4; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #f4efe4; }
+      .ring { stroke: #232a35; }
+      .txt { fill: #232a35; }
+    }
+  </style>
+  <circle cx="32" cy="32" r="31" class="bg" />
+  <circle cx="32" cy="32" r="28" fill="none" class="ring" stroke-width="2.5" />
+  <text x="32" y="38.5" font-family="'DM Mono', 'SF Mono', Consolas, monospace" font-size="22" font-weight="600" class="txt" text-anchor="middle" letter-spacing="-0.5px">fh</text>
+</svg>
