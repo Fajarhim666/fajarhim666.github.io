@@ -35,8 +35,64 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" crossorigin src="/assets/index-DxiXxcGV.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DWt1nUvD.css">
+
+    <!-- Anti Inspect & DevTools Protection -->
+    <script>
+      (function () {
+        // Disable Right Click
+        document.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+          return false;
+        }, false);
+
+        // Disable DevTools & View Source Shortcuts
+        document.addEventListener('keydown', function (e) {
+          // F12
+          if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+
+          var isCtrlOrCmd = e.ctrlKey || e.metaKey;
+          var key = (e.key || '').toUpperCase();
+
+          // Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+Shift+C (Element Picker), Ctrl+Shift+K
+          if (isCtrlOrCmd && e.shiftKey) {
+            if (key === 'I' || key === 'J' || key === 'C' || key === 'K' ||
+                e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67 || e.keyCode === 75) {
+              e.preventDefault();
+              e.stopPropagation();
+              return false;
+            }
+          }
+
+          // Ctrl+U (View Page Source)
+          if (isCtrlOrCmd && (key === 'U' || e.keyCode === 85)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+
+          // Ctrl+S (Save Page)
+          if (isCtrlOrCmd && (key === 'S' || e.keyCode === 83)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+        }, true);
+
+        // Disable Image Dragging
+        document.addEventListener('dragstart', function (e) {
+          if (e.target && e.target.nodeName === 'IMG') {
+            e.preventDefault();
+            return false;
+          }
+        }, false);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BfWsm5nU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-pEWLvEr3.css">
   </head>
   <body>
     <div id="root"></div>
